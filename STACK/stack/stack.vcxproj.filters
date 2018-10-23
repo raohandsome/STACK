@@ -21,7 +21,7 @@
     <ClInclude Include="targetver.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Stack.h">
+    <ClInclude Include="arrayStack.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -30,9 +30,6 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="makeStack.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Stack.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
