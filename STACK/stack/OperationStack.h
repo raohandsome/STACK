@@ -8,9 +8,9 @@ class OperationStack
 public:
 	OperationStack();
 	~OperationStack();
-	int operation(const string str);
+	double operation(const string str);
 	
 private:
-	arrayStack<int> *stack1;
+	arrayStack<double> *stack1;
 	arrayStack<char> *stack2;
 };

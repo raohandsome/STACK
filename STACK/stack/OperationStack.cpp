@@ -3,7 +3,7 @@
 
 OperationStack::OperationStack()
 {
-	stack1 = new arrayStack<int>(50);
+	stack1 = new arrayStack<double>(50);
 	stack2 = new arrayStack<char>(50);
 }
 
@@ -16,7 +16,7 @@ OperationStack::~OperationStack()
 }
 
 
-int OperationStack::operation(const string str)
+double OperationStack::operation(const string str)
 
 {
 	for (int i = 0; i < str.size(); i++)
@@ -42,11 +42,11 @@ int OperationStack::operation(const string str)
 			{
 				while (stack2->stackTop()!='(')
 				{
-					int temp1 = 0;
+					double temp1 = 0;
 					stack1->oStack(temp1);
-					int temp2 = 0;
+					double temp2 = 0;
 					stack1->oStack(temp2);
-					int temp = 0;
+					double temp = 0;
 					if (stack2->stackTop() == '+')
 					{
 						temp = temp1 + temp2;
@@ -79,11 +79,11 @@ int OperationStack::operation(const string str)
 					// if (((stack2->stackTop() == '+' || stack2->stackTop() == '-') && (str[i] == '+' || str[i] == '-')) || ((stack2->stackTop() =='*' || stack2->stackTop() == '/') && (str[i] == '*' || str[i] == '/' || str[i] == '+' || str[i] == '/')))
 
 				{
-					int temp1 = 0;
+					double temp1 = 0;
 					stack1->oStack(temp1);
-					int temp2 = 0;
+					double temp2 = 0;
 					stack1->oStack(temp2);
-					int temp = 0;
+					double temp = 0;
 					if (stack2->stackTop() == '+')
 					{
 						temp = temp1 + temp2;
@@ -120,11 +120,11 @@ int OperationStack::operation(const string str)
 	}
 		while (stack2->stackLength() != 0)
 		{
-			int temp1 = 0;
+			double temp1 = 0;
 			stack1->oStack(temp1);
-			int temp2 = 0;
+			double temp2 = 0;
 			stack1->oStack(temp2);
-			int temp = 0;
+			double temp = 0;
 			if (stack2->stackTop() == '+')
 			{
 				temp = temp1 + temp2;
