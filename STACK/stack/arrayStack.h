@@ -10,6 +10,8 @@ public:
 	~arrayStack();
 	void iStack(const T num);
 	void oStack(T &num);
+	T stackTop();
+	int stackLength();
 	void traverseStack();
 private:
 	T * m_iArray;
@@ -55,6 +57,16 @@ void arrayStack<T>::oStack(T &num)
 	{
 		cout << "stack is empty" << endl;
 	}
+}
+template<class T>
+inline T arrayStack<T>::stackTop()
+{
+	return m_iArray[m_iLength-1];
+}
+template<class T>
+inline int arrayStack<T>::stackLength()
+{
+	return m_iLength;
 }
 template <class T>
 void arrayStack<T>::traverseStack()
