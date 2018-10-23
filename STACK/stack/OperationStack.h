@@ -9,6 +9,7 @@ public:
 	OperationStack();
 	~OperationStack();
 	int operation(const string str);
+	
 private:
 	arrayStack<int> *stack1;
 	arrayStack<char> *stack2;
